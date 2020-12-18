@@ -1,5 +1,6 @@
 import React from 'react';
-import '../style/typeaheadDropdown.css'
+import '../style/typeaheadDropdown.css';
+//import UseUser from './API';
 
 export default class TypeAheadDropDown extends React.Component {
  constructor(props) {
@@ -19,11 +20,12 @@ export default class TypeAheadDropDown extends React.Component {
      suggestions = iteams.sort().filter(v => regex.test(v));
    }
 
-
    this.setState(() => ({
      suggestions,
      text:value
    }));
+
+   
  }
  
  
