@@ -2,7 +2,7 @@ import React from 'react';
 import '../style/typeaheadDropdown.css';
 //import UseUser from './API';
 
-export default class TypeAheadDropDown extends React.Component {
+const TypeAheadDropDown = () => {
  constructor(props) {
    super(props);
    this.state = {
