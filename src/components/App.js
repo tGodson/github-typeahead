@@ -1,13 +1,13 @@
 import React from 'react';
 import '../style/App.css';
-//import TypeaheadDropdown from './typeaheadDropdown';
-import User from './demo';
+import TypeaheadDropdown from './typeaheadDropdown';
+import Input from './demo';
 
 const App = () => {
  return (
    <div className="App">
-       {/* <TypeaheadDropdown iteams={cities} /> */}
-       <User />
+       {/* <TypeaheadDropdown /> */}
+       <Input />
    </div>
  );
 }
