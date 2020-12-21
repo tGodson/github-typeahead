@@ -1,11 +1,13 @@
 import React from 'react';
 import '../style/App.css';
+import Header from './header';
 import TypeaheadDropdown from './typeaheadDropdown';
 
 const App = () => {
  return (
    <div className="App">
-       <TypeaheadDropdown />
+      <Header />
+      <TypeaheadDropdown />
    </div>
  );
 }
