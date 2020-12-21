@@ -8,7 +8,7 @@ This project is based on creating a Github typeahead without using a prebuilt dr
 
 ## Live Demo
 
-[View live demo of app](https://arcane-dawn-43039.herokuapp.com/)
+[View live demo of app](https://github-typeahead-ruby.vercel.app/)
 
 # Project Specification
 
@@ -47,9 +47,9 @@ To get a local copy up and running follow these steps:
 
 ## Deployment
 
-### Install Github Pages
+### Install Vercel
 
-follow to install the Heroku cli: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+follow to install the Vercel cli: https://vercel.com/guides/deploying-react-with-vercel-cra
 
 
 👤 **Tendongze Godson**
