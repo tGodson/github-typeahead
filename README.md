@@ -57,6 +57,7 @@ follow to install the Vercel cli: https://vercel.com/guides/deploying-react-with
 - Github: [tGodson](https://github.com/tGodson)
 - Twitter: [@tendongze95](https://twitter.com/tendongze95)
 - Linkedin: [linkedin](https://www.linkedin.com/in/tendongzegodson)
+- AngelList: [tendongze-godson](https://angel.co/u/tendongze-godson)
 
 ## Show your support
 
