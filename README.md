@@ -8,7 +8,7 @@ This project is based on creating a Github typeahead without using a prebuilt dr
 
 ## Live Demo
 
-[View live demo of app](https://github-typeahead-ruby.vercel.app/)
+[View live demo of app](https://github-typeahead-git-feature.tgodson.vercel.app/)
 
 # Project Specification
 
