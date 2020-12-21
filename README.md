@@ -15,7 +15,7 @@ This project is based on creating a Github typeahead without using a prebuilt dr
 1. Use create-react-app to initialize a new React app.
 2. Delete any unnecessary file or asset.
 3. Use Github api and swr.vercel.app for data fetching.
-4. The typeahead should bei like a vector graphic.
+4. The typeahead should be like a vector graphic.
 5. Everything scales as the viewport increases or decreases in size.
 6. Use github for your repo and vercel for deployment.
 
