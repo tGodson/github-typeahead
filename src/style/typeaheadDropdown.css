@@ -67,7 +67,7 @@
 
 @media only screen and (min-width: 1441px) {
   .TypeAheadDropDown{
-    margin: 15% 5% 0 5%;
+    margin: 12% 5% 0 5%;
   }
 
   .TypeAheadDropDown .grid-container .avatar{
@@ -78,7 +78,7 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
   .TypeAheadDropDown{
-    margin: 15% 15% 0 15%;
+    margin: 12% 15% 0 15%;
   }
 
   .TypeAheadDropDown .grid-container .avatar{
@@ -93,7 +93,7 @@
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .TypeAheadDropDown{
-    margin: 15% 10% 0 10%;
+    margin: 12% 10% 0 10%;
   }
 
   .TypeAheadDropDown .grid-container .avatar{
@@ -112,7 +112,7 @@
 
 @media only screen and (max-width: 479px) {
   .TypeAheadDropDown{
-    margin: 15% 5% 0 5%;
+    margin: 12% 5% 0 5%;
   }
 
   .TypeAheadDropDown .grid-container .avatar{
