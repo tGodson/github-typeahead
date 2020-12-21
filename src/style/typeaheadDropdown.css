@@ -1,5 +1,4 @@
 .TypeAheadDropDown{
-  width: 100%;
   border: 1px solid gray;
   box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 2px 4px 1px rgba(0,0,0, .18);
   font-family: Arial, Helvetica, sans-serif;
@@ -13,11 +12,11 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.73);
-  padding: 1rem 0.5rem ;
+  padding: 1rem 0.5rem;
   box-sizing: border-box;
   outline: none;
-
 }
+
 .TypeAheadDropDown .suggestions::before{
   content: '';
 }
@@ -31,8 +30,9 @@
 }
 
 .TypeAheadDropDown .grid-container{
-  padding: 1rem 0.5rem ;
+  padding: 0.8rem 0.5rem ;
   cursor: pointer;
+  display: flex;
 }
 
 .TypeAheadDropDown .grid-container:hover{
@@ -41,21 +41,76 @@
 }
 
 .TypeAheadDropDown .grid-container img{
-  display : flex;
-}
-
-.TypeAheadDropDown .grid-container .avatar{
-  height: 4rem;
-  width: auto;
-}
-
-.TypeAheadDropDown .grid-container img{
   height: 100%;
   width: auto;
   border-radius: 50%;
 }
 
-.App{
-  margin: 150px auto 0 auto;
-  width: 60rem;
+.TypeAheadDropDown .grid-container .name{
+  font-size: 1.2rem;
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 1441px) {
+  .TypeAheadDropDown{
+    margin: 15% 5% 0 5%;
+  }
+
+  .TypeAheadDropDown .grid-container .avatar{
+    height: 4rem;
+    width: 8%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  .TypeAheadDropDown{
+    margin: 15% 15% 0 15%;
+  }
+
+  .TypeAheadDropDown .grid-container .avatar{
+    height: 3.5rem;
+    width: 12%;
+  }
+
+  .TypeAheadDropDown .grid-container{
+    padding: 0.5rem 0.4rem ;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .TypeAheadDropDown{
+    margin: 15% 10% 0 10%;
+  }
+
+  .TypeAheadDropDown .grid-container .avatar{
+    height: 3rem;
+    width: 12%;
+  }
+
+  .TypeAheadDropDown input{
+    font-size: 1.7rem;
+  }
+
+  .TypeAheadDropDown .grid-container{
+    padding: 0.2rem 0.3rem ;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .TypeAheadDropDown{
+    margin: 15% 5% 0 5%;
+  }
+
+  .TypeAheadDropDown .grid-container .avatar{
+    height: 3rem;
+    width: 20%;
+  }
+
+  .TypeAheadDropDown .grid-container{
+    padding: 0.2rem 0.3rem ;
+  }
+
+  .TypeAheadDropDown input{
+    font-size: 1.5rem;
+  }
 }

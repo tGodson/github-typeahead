@@ -5,12 +5,9 @@ import '../style/typeaheadDropdown.css';
 const Input = ({ u }) => {
   const { user, isLoading, isError } = useUser(u);
 
-  //let text='';
   let [text, setText] = useState('');
-  //let suggestions = [];
   let [suggestions, setSuggestions] = useState([]);
   
-  console.log(text,suggestions);
   if (isError) return <div>failed to load</div>
   if (isLoading) return <div>loading...</div>
 
@@ -32,13 +29,12 @@ const Input = ({ u }) => {
   const RenderSuggestions = () => {
     if (suggestions.length > 0 && text.length > 0) {
       return (
-        // <ul>
-        //   {suggestions.map(user => <li key={user.id} onClick={(e)=>SuggestionSelected(user.login)}>{user.login}</li>)}
-        // </ul>
         <div className="suggestions">
         {suggestions.map(user => 
         <div className="grid-container" key={user.id} onClick={(e)=>SuggestionSelected(user.login)}>
-            <div className="avatar"><img src={user.avatar_url} alt="Avatar"/></div>
+            <div className="avatar">
+              <img src={user.avatar_url} alt="Avatar"/>
+            </div>
             <div className="name">
               <p>{user.login}</p>
             </div>
@@ -52,7 +48,7 @@ const Input = ({ u }) => {
  
   return (
     <div className="TypeAheadDropDown">
-      <input onChange={OnTextChange} placeholder="Search user"  value={text} type="text" />
+      <input onChange={OnTextChange} placeholder="Search Github user"  value={text} type="text" />
       {RenderSuggestions()}
     </div>
   );  
