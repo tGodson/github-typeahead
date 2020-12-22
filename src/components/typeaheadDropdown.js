@@ -1,27 +1,35 @@
 import React, { useState } from 'react';
-import useUser from './API';
+//import useUser from './API';
 import '../style/typeaheadDropdown.css';
 
 const Input = ({ u }) => {
-  const { user, isLoading, isError } = useUser(u);
+  const clientId = '75e3235a908a255af6ad';
+  const clientSecret = 'a23eecc56bc36029b96ec002eda3bb182239ed24';
+  const githubURI = 'https://api.github.com/users';
 
   let [text, setText] = useState('');
   let [suggestions, setSuggestions] = useState([]);
   
-  if (isError) return <div>failed to load</div>
-  if (isLoading) return <div>loading...</div>
+  //if (isError) return <div>failed to load</div>
+  //if (isLoading) return <div>loading...</div>
 
   const SuggestionSelected=(name)=>{
     setText(name);
     setSuggestions([]);
   }
 
-  const OnTextChange = (e) => {
+  const OnTextChange = async(e) => {
     text = e.target.value;
     if (text.length > 0) {
-      let regex = new RegExp(`^${text}`, `i`);
-      suggestions = user.sort().filter(v => regex.test(v.login));
+      try {
+        const user = await fetch(`${githubURI}/${text}?client_id=${clientId}&client_secret=${clientSecret}`)
+        const profile = await user.json();
+        suggestions = [profile];
+      } catch(err) {
+        alert(err); // TypeError: failed to fetch
+      }
     }
+    console.log(text,suggestions)
     setText(text);
     setSuggestions(suggestions);
   }
