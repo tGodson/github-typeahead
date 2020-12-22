@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import useUser from './API';
 import '../style/typeaheadDropdown.css';
 
 const Input = ({ u }) => {
@@ -9,9 +8,6 @@ const Input = ({ u }) => {
 
   let [text, setText] = useState('');
   let [suggestions, setSuggestions] = useState([]);
-  
-  //if (isError) return <div>failed to load</div>
-  //if (isLoading) return <div>loading...</div>
 
   const SuggestionSelected=(name)=>{
     setText(name);
@@ -24,12 +20,13 @@ const Input = ({ u }) => {
       try {
         const user = await fetch(`${githubURI}/${text}?client_id=${clientId}&client_secret=${clientSecret}`)
         const profile = await user.json();
-        suggestions = [profile];
+        if (profile.login){
+          suggestions = [profile];
+        }else suggestions =[];
       } catch(err) {
-        alert(err); // TypeError: failed to fetch
+        document.querySelector('.suggestions').value=err;
       }
     }
-    console.log(text,suggestions)
     setText(text);
     setSuggestions(suggestions);
   }

@@ -26,7 +26,6 @@ This project is based on creating a Github typeahead without using a prebuilt dr
 - npm
 - CSS
 - ES6
-- swr.vercel.app
 - Vercel
 
 ## Getting Started
