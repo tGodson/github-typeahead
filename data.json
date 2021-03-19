@@ -1,0 +1,50 @@
+[
+    {
+      "title": "a hard interview question", 
+      "tags": ["sql", "probability", "modelling"],
+      "companies": ["facebook", "linkedin", "netflix"],
+      "positions": ["software engineer", "Business Analyst", "Data Scientist"]
+    },
+    {
+      "title": "easy question to solve", 
+      "tags": ["sql", "probability", "statistics"],
+      "companies": ["facebook", "linkedin", "amazon", "google"],
+      ",positions": ["software engineer", "marketing Analyst", "Data Scientist", "ML Engineer"]
+    },
+    {
+      "title": "mid-leve question to solve", 
+      "tags": ["sql", "probability", "statistics", "graphics"],
+      "companies": ["facebook", "netflix", "amazon", "google", "youtube"],
+      ",positions": ["software engineer", "marketing Analyst", "Data Scientist", "Graphic designing"]
+    },
+    {
+      "title": "not so easy question to solve", 
+      "tags": ["sql", "probability"],
+      "companies": ["HBO", "Disney"],
+      ",positions": ["software engineer", "Data Scientist", "Entertainment"]
+    },
+    {
+      "title": "not so hard question to solve", 
+      "tags": ["sql", "planning", "codding"],
+      "companies": ["amazon", "google"],
+      ",positions": ["software engineer", "AI Engineer", "Data Scientist", "ML Engineer"]
+    },
+    {
+      "title": "really hard question to solve", 
+      "tags": ["Programming", "probability", "statistics"],
+      "companies": ["facebook", "apple", "amazon", "google", "ABnB"],
+      ",positions": ["AI Engineer", "marketing Analyst", "Data Scientist", "ML Engineer", "DevOps"]
+    },
+    {
+      "title": "very hard question to solve", 
+      "tags": ["programming", "probability", "analysis", "statistics"],
+      "companies": ["netflix", "angellist", "amazon", "google"],
+      ",positions": ["software engineer", "marketing Analyst", "Data Scientist", "ML Engineer", "Cloud Engineer"]
+    },
+    {
+      "title": "very easy question to solve", 
+      "tags": ["sql", "codding"],
+      "companies": ["apple", "samsung", "huawei", "nokia"],
+      ",positions": ["marketing Analyst", "Data Scientist", "Cloud Enginner"]
+    }
+  ]
