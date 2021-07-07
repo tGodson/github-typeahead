@@ -1,0 +1,130 @@
+.header{
+  color:rgba(0, 0, 0, 0.73);
+  margin: auto;
+  text-align: center;
+  height: 4rem;
+  width: 100%;
+
+}
+
+.header p{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.TypeAheadDropDown{
+  border: 1px solid gray;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 2px 4px 1px rgba(0,0,0, .18);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  color: rgba(0, 0, 0, 0.73);
+}
+  
+.TypeAheadDropDown input{
+  width: 100%;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.73);
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.TypeAheadDropDown .suggestions::before{
+  content: '';
+}
+
+.TypeAheadDropDown .suggestions{
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid gray;
+}
+
+.TypeAheadDropDown .grid-container{
+  padding: 0.8rem 0.5rem ;
+  cursor: pointer;
+  display: flex;
+}
+
+.TypeAheadDropDown .grid-container:hover{
+  background: lightgray;
+  text-decoration: underline;
+}
+
+.TypeAheadDropDown .grid-container img{
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+}
+
+.TypeAheadDropDown .grid-container .name{
+  font-size: 1.2rem;
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 1441px) {
+  .TypeAheadDropDown{
+    margin: 12% 5% 0 5%;
+  }
+
+  .TypeAheadDropDown .grid-container .avatar{
+    height: 4rem;
+    width: 8%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  .TypeAheadDropDown{
+    margin: 12% 15% 0 15%;
+  }
+
+  .TypeAheadDropDown .grid-container .avatar{
+    height: 3.5rem;
+    width: 12%;
+  }
+
+  .TypeAheadDropDown .grid-container{
+    padding: 0.5rem 0.4rem ;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .TypeAheadDropDown{
+    margin: 12% 10% 0 10%;
+  }
+
+  .TypeAheadDropDown .grid-container .avatar{
+    height: 3rem;
+    width: 12%;
+  }
+
+  .TypeAheadDropDown input{
+    font-size: 1.7rem;
+  }
+
+  .TypeAheadDropDown .grid-container{
+    padding: 0.2rem 0.3rem ;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .TypeAheadDropDown{
+    margin: 12% 5% 0 5%;
+  }
+
+  .TypeAheadDropDown .grid-container .avatar{
+    height: 3rem;
+    width: 20%;
+  }
+
+  .TypeAheadDropDown .grid-container{
+    padding: 0.2rem 0.3rem ;
+  }
+
+  .TypeAheadDropDown input{
+    font-size: 1.5rem;
+  }
+}
